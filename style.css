@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,9 +25,13 @@ body {
     color: #e5e5e5;
 }
 
-/* MAIN PAGE */
 
-/* Contact */
+
+/*** MAIN PAGE ***/
+
+
+/** Contact **/
+
 .contact {
     padding: 1rem;
     font-size: .8rem;
@@ -43,13 +49,17 @@ body {
 
 .contact a:hover {
     color: #b4b4b4;
-    /* text-decoration: underline; */
 }
 
-/* Layout, profile picture */
+.contact a:active {
+    color: #b4b4b4;
+}
+
+
+/** Layout, profile picture **/
+
 main {
     min-height: 94vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +76,7 @@ main {
     animation: border-motion-2 infinite linear 4s;
 }
 
-.avatar img {
+.avatar > img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -76,7 +86,8 @@ main {
     animation: border-motion infinite linear 4s;
 }
 
-/* Main heading */
+/** Main heading **/
+
 h1 {
     text-align: center;
     padding-inline: 1.5rem;
@@ -87,12 +98,8 @@ h1 {
     color: var(--main-clr);
 }
 
-/* #add-decoration {
-    text-decoration: underline var(--main-clr) 2px;
-    text-underline-offset: 9px;
-} */
+/** Sections - About, Projects, Tech stack **/
 
-/* Sections - About, Projects, Tech stack */
 .sections {
     padding-inline: 1.5rem;
     max-width: 65em;
@@ -144,21 +151,19 @@ h2 {
 }
 
 
-/* PROJECTS PAGE */
+
+/*** PROJECTS PAGE ***/
+
+
+/** Title **/
 
 #projects-heading {
-    margin-block: 3rem 2rem;
-
-    border-left: solid 2.5px var(--main-clr);
-    border-right: solid 2.5px var(--main-clr);
-
-    border-bottom-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    margin-block: 4rem 2rem;
+    border-left: solid 2px var(--main-clr);
 }
 
-/* All projects */
+/** Projects **/
+
 .all-projects {
     padding-inline: 1.5rem;
 
@@ -183,8 +188,8 @@ h2 {
     padding: 1rem;
 }
 
-.gap {
-    margin-block: 1rem;
+.tech-stack {
+    padding-block: 1rem;
 }
 
 .project-link {
@@ -194,15 +199,20 @@ h2 {
 }
 
 .project-link:hover {
-    color: var(--secondary-clr);
+    color: #fff;
 }
 
-/* .image-wraper img {
-    width: 100%;
-    height: 230px;
-} */
+.project-link:active {
+    color: #fff;
+}
 
-/* previous page button */
+.image-wraper img {
+    width: 100%;
+    height: 200px;
+}
+
+/** previous page button **/
+
 .previous-page {
     margin-block-end: 2rem;
 }

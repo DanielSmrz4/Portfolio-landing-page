@@ -184,8 +184,11 @@ h2 {
     flex-direction: column;
 }
 
-.one-project-text {
+.one-project-description {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tech-stack {
@@ -199,11 +202,11 @@ h2 {
 }
 
 .project-link:hover {
-    color: #fff;
+    color: grey;
 }
 
 .project-link:active {
-    color: #fff;
+    color: grey;
 }
 
 .image-wraper img {

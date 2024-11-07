@@ -1,0 +1,9 @@
+@media (width < 55em) {
+    .sections {
+        grid-template-columns: 1fr;
+        margin-block-end: 1rem;
+    }
+    .avatar {
+        margin-block-start: 2rem;
+    } 
+}

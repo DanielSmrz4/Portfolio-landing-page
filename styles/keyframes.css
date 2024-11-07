@@ -1,0 +1,23 @@
+@keyframes border-motion {
+    25% {
+        border-radius: 40% 45% 40% 50%;
+    }
+    50% {
+        border-radius: 50% 40% 40% 40%;
+    }
+    75% {
+        border-radius: 45% 40% 40% 45%;
+    }  
+}
+
+@keyframes border-motion-2 {
+    25% {
+        border-radius: 50% 45% 45% 40%;
+    }
+    50% {
+        border-radius: 40% 50% 40% 50%;
+    }
+    75% {
+        border-radius: 35% 30% 45% 50%;
+    }  
+}

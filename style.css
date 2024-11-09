@@ -7,8 +7,9 @@
 }
 
 :root {
-    --main-clr: rgb(0, 157, 255);
-    --secondary-clr: rgb(255, 166, 0);
+    --blue-clr: rgb(0, 157, 255);
+    --blue-avatar-clr: rgba(0, 157, 255, 0.7);
+    --orange-clr: rgb(255, 166, 0);
     --section-bg-clr: #181818;
 }
 
@@ -71,8 +72,8 @@ main {
     width: 155px;
     height: 155px;
     border-radius: 50%;
-    background-color: var(--secondary-clr);
-    box-shadow: 0 0 1rem -.6rem #000;
+    background-color: rgba(0, 157, 255, 0.7);
+    box-shadow: inset 0 0 1rem -.6rem #000;
     animation: border-motion-2 infinite linear 4s;
 }
 
@@ -81,8 +82,7 @@ main {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid var(--main-clr);
-    box-shadow: 0 0 1rem -.5rem #000;
+    border: 3px solid #000;
     animation: border-motion infinite linear 4s;
 }
 
@@ -95,7 +95,7 @@ h1 {
 }
 
 #name {
-    color: var(--main-clr);
+    color: var(--blue-clr);
 }
 
 /** Sections - About, Projects, Tech stack **/
@@ -110,7 +110,7 @@ h1 {
 }
 
 .one-section {
-    border: 2.5px solid var(--main-clr);
+    border: 2.5px solid var(--blue-avatar-clr);
     border-radius: 1rem;
     padding: .5rem 1rem;
     box-shadow: 0 0 1rem -.3rem #000;
@@ -124,7 +124,7 @@ h2 {
 
 /* Projects */
 .projects {
-    border: 3px solid var(--secondary-clr);
+    border: 3px solid var(--blue-clr);
 }
 
 .next-page {
@@ -159,7 +159,7 @@ h2 {
 
 #projects-heading {
     margin-block: 4rem 2rem;
-    border-left: solid 2px var(--main-clr);
+    border-left: solid 3px var(--blue-clr);
 }
 
 /** Projects **/
@@ -196,17 +196,17 @@ h2 {
 }
 
 .project-link {
-    color: var(--main-clr);
+    color: var(--blue-clr);
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 .project-link:hover {
-    color: grey;
+    color: var(--blue-avatar-clr);
 }
 
 .project-link:active {
-    color: grey;
+    color: var(--blue-avatar-clr);
 }
 
 .image-wraper img {
